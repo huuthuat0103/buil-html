@@ -1,0 +1,16 @@
+deploy_dev:
+  before_script:
+    - 'which ssh-agent || ( yum update -y && yum install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - whoami
+  script:
+    - cd /var/www/html/shared
+    - pwd
+    - git checkout .
+    - git status
+    - git fetch
+    - git checkout master
+    - git status
+    - git pull origin master
+  only:
+    - master

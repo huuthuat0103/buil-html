@@ -1,0 +1,20 @@
+/*Font - end*/
+$width-min-mobile: 320px;
+$width-mobile: 480px;
+$width-tablet: 768px;
+$width-desktop: 1200px;
+
+@mixin mobile { @media  screen and (max-width: #{$width-mobile}) {
+  @content;
+}
+}
+
+@mixin tablet { @media  screen and (min-width: #{$width-tablet}) and (max-width: #{$width-desktop}) {
+  @content;
+}
+}
+
+@mixin desktop {   @media  screen and (min-width: #{$width-desktop}) {
+  @content;
+}
+}

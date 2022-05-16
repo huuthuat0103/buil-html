@@ -1,0 +1,901 @@
+<html lang="vi">
+
+<head>
+    <!-- include head.html -->
+    
+    <!-- include styles.html -->
+    
+
+    <style>
+        .table {
+            max-width: 900px;
+            margin: 0 auto; 
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Roboto';
+            -webkit-print-color-adjust: exact;
+        }
+        .text-bold{
+            font-weight: bold;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .text-right {
+            text-align: right;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f5f8fc;
+        }
+        .table tr td{
+            border: 1px solid #cddbfc;
+            padding: .55rem .75rem;
+            vertical-align: middle;
+            border-spacing: 0;
+            box-sizing: border-box;
+            font-size: 14px;
+            width: 27%;
+        }
+        .table tr td.w-19 {
+            width: 19%;
+        }
+        .table tr td .logo {
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
+        .table tr td .logo a{
+            position: absolute;
+            width: 100%;
+            display: block;
+            height: 100%;
+            top: 0;
+        }
+        .table tr td .logo a:before {
+            width: 7px;
+            height: 7px;
+            content: '';
+            border-left: 1px solid #9498AB;
+            border-top: 1px solid #9498AB;
+            position: absolute;
+            right: 0;
+            top: 10px;
+            transform: rotate(135deg);
+        }
+        .pr-mobile-detail p{
+                font-weight: 400;
+                font-size: 16px;
+                color: #363C58;
+                position: relative;
+                width: 75%;
+                text-align: center;
+                padding: 0 20px;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                }
+        .pr-mobile-detail p img {
+            position: absolute;
+            right: -10px;
+            top: -5px;
+        }
+
+        .pr-mobile-detail {
+            text-align: center;
+        }
+
+        .pr-mobile-detail .img-mobile {
+            text-align: center;
+            height: 185px;
+            width: 150px;
+        }
+        .list-color {
+            margin-top: 20px;
+        }
+
+        .list-color span {
+            margin: 0 3px;
+        }
+
+        .list-color span.active {
+            width: 25px;
+            height: 25px;
+            border: 1px solid #cddbfc;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            padding: 2px;
+            box-sizing: border-box;
+        }
+
+        .list-color a.color {
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            padding: 0;
+            display: inline-block;
+        }
+
+        .img-feature {
+            height: 45px;
+            width: 45px;
+            border-radius: 5px;
+        }
+
+        .btn-table {
+            padding: 5px 20px;
+            font-weight: bold;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #363C58;
+            border: 1px solid #afb7cc;
+            border-radius: 100px;
+            background: #fff;
+        }
+
+        .prices-pink {
+            color: #FF3963 ;
+            font-weight: bold;
+        }
+
+        .mb-0 {
+            margin-bottom: 0;
+            margin-top: 3px;
+        }
+        .bg-white {
+            background-color: #fff !important;
+        }
+
+    </style>
+</head>
+
+<body class="wrapper">
+
+   <section class="terminal-print">
+    <table class="table">
+        <tr class="bg-white">
+            <td class="text-center text-bold w-19">통신사 선택</td>
+            <td>
+                <div class="logo">
+                    <img src="/images/box-04.svg" alt="">
+                    <a href=""></a>
+                </div>
+            </td>
+            <td>
+                <div class="logo">
+                    <img src="/images/box-04.svg" alt="">
+                    <a href=""></a>
+                </div>
+            </td>
+            <td class="text-bold">
+                <div class="logo">     
+                    통신사
+                    <a href=""></a>
+                </div>
+            </td>
+        </tr>
+        <tr class="bg-white">
+            <td rowspan="2" class="text-right w-19 text-bold">
+                단말기
+            </td>
+            <td>
+                <div class="pr-mobile-detail">
+                    <p class="name">
+                        갤럭시 A90 5G (128GB) LONG NAME
+                        <img src="/images/reset-table.svg" alt="">
+                    </p>
+                    <img class="img-mobile" src="/images/phone-01.png" alt="">
+                    <div class="list-color">
+                        <span class="active">
+                            <a class="color" style="background: #000;"></a>
+                        </span>
+                        <span>
+                            <a class="color" style="background: red;"></a>
+                        </span>
+                        <span>
+                            <a class="color" style="background: green;"></a>
+                        </span>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="pr-mobile-detail">
+                    <p class="name">
+                        갤럭시 A90 5G (128GB) LONG NAME
+                        <img src="/images/reset-table.svg" alt="">
+                    </p>
+                    <img class="img-mobile" src="/images/phone-01.png" alt="">
+                    <div class="list-color">
+                        <span class="active">
+                            <a class="color" style="background: #000;"></a>
+                        </span>
+                        <span>
+                            <a class="color" style="background: red;"></a>
+                        </span>
+                        <span>
+                            <a class="color" style="background: green;"></a>
+                        </span>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="pr-mobile-detail">
+                    <img src="/images/img-07.png" alt="">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">
+                <img class="img-feature" src="/images/icon-06.svg" alt="">
+                <img  class="img-feature" src="/images/icon-07.svg" alt="">
+            </td>
+            <td class="text-center">
+                <img class="img-feature" src="/images/icon-06.svg" alt="">
+                <img  class="img-feature" src="/images/icon-07.svg" alt="">
+            </td>
+            <td class="text-center"></td>
+        </tr>
+        <tr>
+            <td class="text-right w-19 text-bold">단말기 설명</td>
+            <td class="text-center">
+              <button class="btn btn-table" type="button">단말기 설명</button>
+            </td>
+            <td class="text-center">
+              <button class="btn btn-table" type="button">단말기 설명</button>
+            </td>
+            <td class="text-center">
+              <button class="btn btn-table" type="button">단말기 설명</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-right w-19 text-bold">출시일</td>
+            <td>2019/10/11</td>
+            <td>2019/10/25</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-right w-19 text-bold">출고가</td>
+            <td class="prices-pink">1,199,000 원</td>
+            <td class="prices-pink">1,199,000원</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-right w-19 text-bold">상세 OS</td>
+            <td>Android 9.0 Pie</td>
+            <td>iOS 13</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-right w-19 text-bold">CPU</td>
+            <td>Snapdragon 855</td>
+            <td>A13 Bionic + Generation Neural Engine</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-right w-19 text-bold">디스플레이</td>
+            <td>
+              <span>6.4 type OLED FHD </span>
+              <span>6.4 type OLED</span>
+            </td>
+            <td>Liquid Retina HD</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-right w-19 text-bold">디스플레이 크기 </td>
+            <td>6.4 inches</td>
+            <td>6.1 inches</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-right w-19 text-bold">카메라</td>
+            <td>
+              <p class="mb-0">전면: 500만</p>
+              <p class="mb-0">후면: 200만+500만+700만+200만</p>
+            </td>
+            <td>
+              <p class="mb-0">전면: 500만</p>
+              <p class="mb-0">후면: 200만+500만+700만+200만</p>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-right w-19 text-bold">내장 메모리</td>
+            <td>256 GB</td>
+            <td>256 GB</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-right w-19 text-bold">외장 메모리</td>
+            <td>200 GB</td>
+            <td>0 GB</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-right w-19 text-bold">배터리</td>
+            <td>4000mAh</td>
+            <td>4000mAh</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-right w-19 text-bold">USIM</td>
+            <td>- / -</td>
+            <td>- / -</td>
+            <td></td>
+          </tr>
+    </table>
+   </section>
+
+    <!-- include scripts.html -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- build:js script/script.min.js -->
+<script type="text/javascript" src="/js/script.js"></script>
+<script type="text/javascript" src="/js/calendar.js"></script>
+<!-- endbuild -->
+<script src="http://ellacy.edu.vn/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=4.4.6"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet prefetch"
+  href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+<script type="">
+
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+
+
+isIphone = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+isAndroid = /Android/i.test(navigator.userAgent);
+
+var Width = window.screen.width;
+var Height = window.screen.height;
+
+function doOnOrientationChange() {
+  switch (window.orientation) {
+    case -90:
+    case 90:
+      if (isMobile) {
+        $('html').removeClass('devices-mobile');
+        $('body').removeClass('body-mobile');
+        $('body').css('width', '100%');
+      }
+
+      break;
+    default:
+      if (isMobile && Height < 1000) {
+        $('html').addClass('devices-mobile');
+        $('body').addClass('body-mobile');
+      }
+
+      if (isIphone) {
+        if (Height > 660 && Height < 740) {
+          $('.devices-mobile .body-mobile').css('width', '60%');
+          $('.devices-mobile .modal').css('width', '60%');
+        } else {
+          if (Height > 810 && Height < 850) {
+            $('.devices-mobile .body-mobile').css('width', '56.5%');
+            $('.devices-mobile .modal').css('width', '56.5%');
+          }
+
+          if (Height > 850) {
+            $('.devices-mobile .body-mobile').css('width', '57.5%');
+            $('.devices-mobile .modal').css('width', '57.5%');
+          }
+        }
+      } else {
+        if (isMobile) {
+          $('body').css('width', '62%');
+        }
+      }
+      break;
+  }
+}
+
+
+window.addEventListener('orientationchange', doOnOrientationChange);
+
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+
+
+isIphone=  /iPhone|iPad|iPod/i.test(navigator.userAgent);
+isAndroid=  /Android/i.test(navigator.userAgent);
+
+var Width = window.screen.width;
+var Height = window.screen.height;
+
+function doOnOrientationChange() {
+    switch(window.orientation) {
+      case -90: case 90:
+      if (isMobile) {
+  $('html').removeClass('devices-mobile');
+  $('body').removeClass('body-mobile');
+  $('body').css('width', '100%');
+}
+
+        break;
+      default:
+      if (isMobile $$ Height < 1000) {
+  $('html').addClass('devices-mobile');
+  $('body').addClass('body-mobile');
+  $('body').css('width', '62%');
+}
+
+if (isIphone) {
+  if (Height>660 && Height<740) {
+    $('.devices-mobile .body-mobile').css('width','60%');
+    $('.devices-mobile .modal').css('width','60%');
+  }
+
+  else {
+    if (Height>810 && Height<850) {
+    $('.devices-mobile .body-mobile').css('width','56.5%');
+    $('.devices-mobile .modal').css('width','56.5%');
+    }
+
+    else {
+      if (Height>850 ) {
+    $('.devices-mobile .body-mobile').css('width','57.5%');
+    $('.devices-mobile .modal').css('width','57.5%');
+  }
+  }
+}
+}
+
+else {
+  if (isAndroid) {
+    $('body').css('width', '62%');
+}
+}
+        break;
+    }
+}
+
+
+window.addEventListener('orientationchange', doOnOrientationChange);
+
+// Initial execution if needed
+doOnOrientationChange();
+
+if (isIphone) {
+  if (Height>660 && Height<740) {
+    $('.devices-mobile .body-mobile').css('width','60%');
+    $('.devices-mobile .modal').css('width','60%');
+  }
+
+  else {
+    if (Height>810 && Height<850) {
+    $('.devices-mobile .body-mobile').css('width','56.5%');
+    $('.devices-mobile .modal').css('width','56.5%');
+  }
+
+  if (Height>850 ) {
+    $('.devices-mobile .body-mobile').css('width','57.5%');
+    $('.devices-mobile .modal').css('width','57.5%');
+  }
+}
+}
+
+
+if (isIphone) {
+  if (Height>850) {
+    $('.devices-mobile .body-mobile').css('width','66%');
+    $('.devices-mobile .modal').css('width','66%');
+  }
+
+  else {
+    if (Height>800) {
+      $('.devices-mobile .body-mobile').css('width','calc(100% - 900px)');
+      $('.devices-mobile .modal').css('width','57%');
+    }
+
+  else {
+    if (Height>700) {
+      $('.devices-mobile .body-mobile').css('width','68.2%');
+      $('.devices-mobile .modal').css('width','68.2%');
+    }
+
+    else {
+      $('.devices-mobile .body-mobile').css('width','68%');
+      $('devices-mobile .modal').css('width','68%');
+    }
+
+  }
+  }
+
+} else {
+  if (Width<=375 &&  Height<=700) {
+    $('.devices-mobile .body-mobile').css('width','70%' );
+    $('.devices-mobile .modal').css('width','70%' )
+  }
+}
+
+$(window).on('scroll', function () {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop >= 275) {
+        $('.right-information').addClass('right-fixed');
+        $('.right-information').css({'width': widthRight ,'left': left});
+
+    } else {
+        $('.right-information').removeClass('right-fixed');
+    }
+});
+
+var supportsOrientationChange = "onorientationchange" in window,
+    orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+
+window.addEventListener(orientationEvent, function() {
+
+  $('.wrapper').css("background", "#000");
+
+  if(window.innerHeight > window.innerWidth){
+    alert("Please use Landscape!");
+  }else{
+    alert("Please use portrait!");
+  }
+}, false);
+$(document).ready(function() {
+  alert("1111");
+    $(window).on('orientationchange', function(event) {
+      if(screen.availHeight > screen.availWidth){
+          alert("Please use Landscape!");
+      }
+    });
+});
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+// alert(isMobile)
+if (isMobile) {
+  $('html, body').css('width','812px' ).css('height', '375px')
+  // .css('transform', 'rotate(-90deg)').css('transform-origin','top left')
+
+
+
+var widthRight = document.getElementById("right-information").offsetWidth;
+
+var widthBodys = $(".wrapper").width();
+var widthDevice =window.screen.width;
+
+if(widthBodys < widthDevice) {
+  $('.wrapper').addClass('bodyCustom');
+}
+else {
+    $('.wrapper').removeClass('bodyCustom');
+
+  }
+$("img").on("error", function () {
+  $(this).attr("src", "/images/default_large.png");
+    $(this).css('opacity', 0);
+});
+
+$("img").on("error", function () {
+    $(this).attr("src", "/images/default_large.png");
+});
+
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+
+
+isIphone=  /iPhone|iPad|iPod/i.test(navigator.userAgent);
+isAndroid=  /Android/i.test(navigator.userAgent);
+
+var Width = window.screen.width;
+var Height = window.screen.height;
+
+function doOnOrientationChange() {
+    switch(window.orientation) {
+      case -90: case 90:
+      if (isMobile) {
+  $('html').removeClass('devices-mobile');
+  $('body').removeClass('body-mobile');
+  $('body').css('width', '100%');
+}
+
+        break;
+      default:
+      if (isMobile $$ Height < 1000) {
+  $('html').addClass('devices-mobile');
+  $('body').addClass('body-mobile');
+  $('body').css('width', '62%');
+}
+
+if (isIphone) {
+  if (Height>660 && Height<740) {
+    $('.devices-mobile .body-mobile').css('width','60%');
+    $('.devices-mobile .modal').css('width','60%');
+  }
+
+  else {
+    if (Height>810 && Height<850) {
+    $('.devices-mobile .body-mobile').css('width','56.5%');
+    $('.devices-mobile .modal').css('width','56.5%');
+    }
+
+    else {
+      if (Height>850 ) {
+    $('.devices-mobile .body-mobile').css('width','57.5%');
+    $('.devices-mobile .modal').css('width','57.5%');
+  }
+  }
+}
+}
+
+else {
+  if (isAndroid) {
+    $('body').css('width', '62%');
+}
+}
+        break;
+    }
+}
+
+
+window.addEventListener('orientationchange', doOnOrientationChange);
+
+// Initial execution if needed
+doOnOrientationChange();
+
+if (isIphone) {
+  if (Height>660 && Height<740) {
+    $('.devices-mobile .body-mobile').css('width','60%');
+    $('.devices-mobile .modal').css('width','60%');
+  }
+
+  else {
+    if (Height>810 && Height<850) {
+    $('.devices-mobile .body-mobile').css('width','56.5%');
+    $('.devices-mobile .modal').css('width','56.5%');
+  }
+
+  if (Height>850 ) {
+    $('.devices-mobile .body-mobile').css('width','57.5%');
+    $('.devices-mobile .modal').css('width','57.5%');
+  }
+}
+}
+
+
+if (isIphone) {
+  if (Height>850) {
+    $('.devices-mobile .body-mobile').css('width','66%');
+    $('.devices-mobile .modal').css('width','66%');
+  }
+
+  else {
+    if (Height>800) {
+      $('.devices-mobile .body-mobile').css('width','calc(100% - 900px)');
+      $('.devices-mobile .modal').css('width','57%');
+    }
+
+  else {
+    if (Height>700) {
+      $('.devices-mobile .body-mobile').css('width','68.2%');
+      $('.devices-mobile .modal').css('width','68.2%');
+    }
+
+    else {
+      $('.devices-mobile .body-mobile').css('width','68%');
+      $('devices-mobile .modal').css('width','68%');
+    }
+
+  }
+  }
+
+} else {
+  if (Width<=375 &&  Height<=700) {
+    $('.devices-mobile .body-mobile').css('width','70%' );
+    $('.devices-mobile .modal').css('width','70%' )
+  }
+}
+
+
+
+
+
+$(".btn-menu").click(function(){
+  $(".menu-wrapper").addClass("active-menu");
+  $(".wrapper").css("overflow", "hidden");
+  });
+  $("#btn-menu").on('click', function() {
+    $("body").css('overflow', 'hidden')
+    $(".wrapper").css("overflow", "hidden");
+  //   $('body').html('<div class="ovelay_menu"></div>');
+  });
+  $("#close-menu").on('click', function() {
+    $("body").css('overflow', 'auto')
+    $(".wrapper").css("overflow", "inherit");
+  });
+  $(".close-menu").click(function(){
+      $(".menu-wrapper").removeClass("active-menu");
+  });
+
+$('.carousel').carousel({
+  touch: true
+})
+
+
+var galleryDetail = new Swiper('.thumbs-detail', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var galleryTop = new Swiper('.top-detail', {
+  spaceBetween: 0,
+  loop: true,
+  thumbs: {
+    swiper: galleryDetail,
+  },
+  navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+});
+
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 0,
+  loop: true,
+  thumbs: {
+    swiper: galleryThumbs,
+  },
+  navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+});
+var ThumbsTwo = new Swiper('.thumbs-two', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var productTwo = new Swiper('.product-two', {
+  spaceBetween: 0,
+  loop: true,
+  thumbs: {
+    swiper: ThumbsTwo
+  }
+});
+
+$(function () {
+  $(".form-datepicker").datepicker({
+  autoclose: true,
+  todayHighlight: true,
+  }).datepicker('update', new Date());
+});
+
+$('.timepicker').timepicker({
+    timeFormat: 'h:mm p',
+    interval: 60,
+    minTime: '10',
+    maxTime: '6:00pm',
+    defaultTime: '11',
+    startTime: '10:00',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+});
+
+
+
+
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
+
+  $( function() {
+
+  } );
+
+  $(document).ready(function(){
+
+
+  $(".btn-input-form").on('click', function() {
+    $(".wrapper.modal-open").css('padding', '0 15px')
+  });
+
+  $(".item-sub a").click(function(){
+      $(".menu-wrapper").removeClass("active-menu");
+  });
+
+  $(".btn-setting").click(function(){
+  $(".list_event_item .item").toggleClass("active-setting");
+  });
+
+  $(".list-setting li").click(function(){
+      $(".list_event_item .item").removeClass("active-setting");
+  });
+
+  $(".btn-paint").click(function(){
+    $(".btn-paint").css('display', 'none')
+    $(".content-paint").css('display', 'block');
+
+  });
+  $(".close-paint").click(function(){
+    $(".btn-paint").css('display', 'block')
+    $(".content-paint").css('display', 'none');
+  });
+  $("a").click(function(){
+    $(".btn-paint").css('display', 'block')
+    $(".content-paint").css('display', 'none');
+  });
+  $('body .menu-wrapper').on('click', function(e){
+    if(e.target.className == 'menu-wrapper active-menu')  $(".menu-wrapper").removeClass("active-menu");
+  })
+});
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
+var widthRight = document.getElementById("right-information").offsetWidth;
+var widthBody = document.getElementById("wireless-advice").offsetWidth;
+var left = ((widthBody - 3*widthRight) /2) + 30 + 2*widthRight;
+
+
+$(document).ready(function() {
+  $('#summernote').summernote();
+
+});
+
+
+$(window).resize(function(){
+  widthRight = document.getElementById("right-information").offsetWidth;
+  widthBody = document.getElementById("wireless-advice").offsetWidth;
+  left = ((widthBody - 3*widthRight) /2) + 30 + 2*widthRight;
+  var scrollTop = $(window).scrollTop();
+    if (scrollTop >= 275) {
+        $('.right-information').addClass('right-fixed');
+        $('.right-information').css({'width': widthRight ,'left': left});
+
+    } else {
+        $('.right-information').removeClass('right-fixed');
+    }
+});
+
+
+    $('body .menu-wrapper').on('click', function(e){
+    if(e.target.className == 'menu-wrapper active-menu')  $(".menu-wrapper").removeClass("active-menu");
+})
+
+$('*[data-link^="/"]').click(function(){
+window.location.href = $(this).data('link')
+
+})
+
+$("img").on("error", function () {
+  $(this).attr("src", "/images/default_large.png");
+    $(this).css('opacity', 0);
+});
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

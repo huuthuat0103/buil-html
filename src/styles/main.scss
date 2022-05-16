@@ -1,0 +1,38 @@
+// ----------------------------------------------------------------------
+// Font
+// ----------------------------------------------------------------------
+// @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=vietnamese');
+
+@import url('<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">');
+// ----------------------------------------------------------------------
+// Base
+// ----------------------------------------------------------------------
+//@import "base/mixins";
+@import "base/variables";
+//@import "base/extends";
+//@import "base/reset";
+@import "base/fonts";
+@import "custom/custom-plugin";
+//@import "base/utility";
+@import "base/button";
+
+// ----------------------------------------------------------------------
+// Layout
+// ----------------------------------------------------------------------
+@import "layout/header";
+@import "layout/footer";
+@import "layout/global";
+
+
+// ----------------------------------------------------------------------
+// Pages
+// ----------------------------------------------------------------------
+@import "pages/homepage";
+@import "pages/page";
+// ----------------------------------------------------------------------
+// Responsive
+// ----------------------------------------------------------------------
+@import "responsive/responsive";
+
+
+

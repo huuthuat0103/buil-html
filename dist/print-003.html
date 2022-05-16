@@ -1,0 +1,971 @@
+<html
+    class="js sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers"
+    lang="ko">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>모비셀 : MOBISELL</title>
+    <meta name="description" content="">
+    <!--<link rel="manifest" href="../../site.webmanifest">-->
+    <link rel="apple-touch-icon" href="../../icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="styleSheet" href="../../font/NotoKr.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/eformDocumentPrint.css?_206244876374">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+        <style>
+            @page {
+                size: A4 portrait;
+                margin: 0mm;
+            }
+
+            html {
+                background-color: #fff;
+                margin: 0 auto;
+            }
+
+            td {
+                color: #363c58;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                -webkit-touch-callout: none;
+                user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                -webkit-user-select: none;
+            }
+
+            body * {
+                box-sizing: border-box;
+                font-family: "Noto Sans KR", sans-serif;
+                -webkit-print-color-adjust: exact;
+            }
+
+            #eform-wrap {
+                position: relative;
+                width: 1000px;
+                overflow: hidden;
+                margin: 0 auto;
+            }
+
+            #eform-wrap section {
+                position: relative;
+                width: 900px;
+                min-height: 1330px;
+                margin: 50px 50px 0;
+                page-break-before: always;
+                overflow: hidden;
+            }
+
+            #eform-wrap section:first-child {
+                page-break-before: avoid;
+            }
+
+            #eform-wrap section header:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            #eform-wrap section header .telecom-logo {
+                display: inline-block;
+                overflow: hidden;
+                vertical-align: -3px;
+            }
+
+            #eform-wrap section header h1 {
+                display: inline-block;
+                margin: 15px 0 0 5px;
+                font-size: 45px;
+                font-weight: 500;
+            }
+
+            #eform-wrap section header .info-date {
+                float: right;
+                margin-top: 33px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            /* 怨듯넻 */
+            #eform-wrap h2 {
+                margin: 55px 0 10px;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            #eform-wrap section article:first-child h2 {
+                margin-top: 0;
+            }
+
+            #eform-wrap table {
+                width: 100%;
+                border-bottom: 1px solid #bcbcbc;
+                border-spacing: 0;
+                border-collapse: separate;
+            }
+
+            #eform-wrap article tr {
+                height: 45px;
+            }
+
+            #eform-wrap article tr.tr-h20 {
+                height: 20px;
+            }
+
+            #eform-wrap article tr.tr-h35 {
+                height: 35px;
+            }
+
+            #eform-wrap tr .tr-bgcolor {
+                background-color: #d4e1ef;
+            }
+
+            #eform-wrap th {
+                padding-top: 2px;
+                /*border-top:1px solid #bbb; border-bottom:1px solid #bbb;*/
+                background-color: #cecdcd;
+                text-align: center;
+                color: #fff;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            #eform-wrap td {
+                border-top: 1px dashed #bbb;
+                padding-left: 5px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            #eform-wrap td.td-brd-line {
+                border-right: 10px solid #cecdcd;
+            }
+
+            #eform-wrap .td-bg {
+                background-color: #f5f2f2;
+            }
+
+            #eform-wrap .td-font {
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            #eform-wrap td.border-none {
+                border-top: 0;
+            }
+
+            #eform-wrap td span {
+                padding-right: 7px;
+            }
+
+            #eform-wrap tr:first-child td {
+                border-top: none;
+            }
+
+            #eform-wrap dl,
+            #eform-wrap dt,
+            #eform-wrap dd,
+            #eform-wrap p {
+                margin: 0;
+                padding: 0;
+            }
+
+            #eform-wrap ul,
+            #eform-wrap ol {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            #eform-wrap em {
+                font-style: normal;
+            }
+
+            #eform-wrap span.ft15 {
+                font-size: 15px;
+            }
+
+            #eform-wrap .tbl-custom-info {
+                height: 60px;
+            }
+
+            #eform-wrap .tr-bgcolor {
+                background-color: #eaf3ff;
+            }
+
+            #eform-wrap .tbl-custom-info p {
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+
+            #eform-wrap span input {
+                height: 35px;
+                border-radius: 4px;
+            }
+
+            #eform-wrap input {
+                height: 35px;
+                border-radius: 4px;
+                border: 1px solid #bcbcbc;
+            }
+
+            #eform-wrap input[type="checkbox"] {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border: 2px solid #bcbcbc;
+                cursor: pointer;
+                vertical-align: sub;
+            }
+
+            #eform-wrap tbody .consult-info {
+                width: 100px;
+            }
+
+            #eform-wrap footer div {
+                width: 100%;
+                font-size: 16px;
+                margin-top: 8px;
+                float: left;
+            }
+
+            #eform-wrap footer .ft-info {
+                border: 1px solid #171717;
+                width: 32%;
+                height: 35px;
+                float: left;
+                border-radius: 3px;
+                padding-left: 7px;
+                margin-right: 10px;
+            }
+
+            #eform-wrap footer .ft-info .brd-line {
+                width: 70px;
+                border-right: 1px solid #171717;
+                float: left;
+            }
+
+            #eform-wrap footer .ft-info .brd-pd {
+                display: inline-block;
+                padding-top: 7px;
+                padding-left: 10px;
+                float: left;
+            }
+
+            #eform-wrap .mg10 {
+                padding: 0 15px 0 10px;
+            }
+
+            #eform-wrap .mg10-last {
+                padding: 0 10px 0 15px;
+            }
+
+            html {
+                line-height: 1.15;
+                /* 1 */
+                -webkit-text-size-adjust: 100%;
+                /* 2 */
+            }
+
+            body {
+                margin: 0;
+            }
+
+            main {
+                display: block;
+            }
+
+            h1 {
+                font-size: 2em;
+                margin: 0.67em 0;
+            }
+
+            hr {
+                box-sizing: content-box;
+                /* 1 */
+                height: 0;
+                /* 1 */
+                overflow: visible;
+                /* 2 */
+            }
+
+            pre {
+                font-family: monospace, monospace;
+                /* 1 */
+                font-size: 1em;
+                /* 2 */
+            }
+
+            a {
+                background-color: transparent;
+            }
+
+            abbr[title] {
+                border-bottom: none;
+                /* 1 */
+                text-decoration: underline;
+                /* 2 */
+                text-decoration: underline dotted;
+                /* 2 */
+            }
+
+            b,
+            strong {
+                font-weight: bolder;
+            }
+
+            code,
+            kbd,
+            samp {
+                font-family: monospace, monospace;
+                /* 1 */
+                font-size: 1em;
+                /* 2 */
+            }
+
+            small {
+                font-size: 80%;
+            }
+
+            sub,
+            sup {
+                font-size: 75%;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+            }
+
+            sub {
+                bottom: -0.25em;
+            }
+
+            sup {
+                top: -0.5em;
+            }
+
+            img {
+                border-style: none;
+            }
+
+            button,
+            input,
+            optgroup,
+            select,
+            textarea {
+                font-family: inherit;
+                font-size: 100%;
+                line-height: 1.15;
+                margin: 0;
+            }
+
+            button,
+            input {
+                overflow: visible;
+            }
+
+            button,
+            select {
+                text-transform: none;
+            }
+
+            button,
+            [type="button"],
+            [type="reset"],
+            [type="submit"] {
+                -webkit-appearance: button;
+            }
+
+            button::-moz-focus-inner,
+            [type="button"]::-moz-focus-inner,
+            [type="reset"]::-moz-focus-inner,
+            [type="submit"]::-moz-focus-inner {
+                border-style: none;
+                padding: 0;
+            }
+
+            button:-moz-focusring,
+            [type="button"]:-moz-focusring,
+            [type="reset"]:-moz-focusring,
+            [type="submit"]:-moz-focusring {
+                outline: 1px dotted ButtonText;
+            }
+
+            fieldset {
+                padding: 0.35em 0.75em 0.625em;
+            }
+
+            legend {
+                box-sizing: border-box;
+                /* 1 */
+                color: inherit;
+                /* 2 */
+                display: table;
+                /* 1 */
+                max-width: 100%;
+                /* 1 */
+                padding: 0;
+                /* 3 */
+                white-space: normal;
+                /* 1 */
+            }
+
+            progress {
+                vertical-align: baseline;
+            }
+
+            textarea {
+                overflow: auto;
+            }
+
+            [type="checkbox"],
+            [type="radio"] {
+                box-sizing: border-box;
+                /* 1 */
+                padding: 0;
+                /* 2 */
+            }
+
+            [type="number"]::-webkit-inner-spin-button,
+            [type="number"]::-webkit-outer-spin-button {
+                height: auto;
+            }
+
+            [type="search"] {
+                -webkit-appearance: textfield;
+                /* 1 */
+                outline-offset: -2px;
+            }
+
+            [type="search"]::-webkit-search-decoration {
+                -webkit-appearance: none;
+            }
+
+            ::-webkit-file-upload-button {
+                -webkit-appearance: button;
+                /* 1 */
+                font: inherit;
+                /* 2 */
+            }
+
+            details {
+                display: block;
+            }
+
+            summary {
+                display: list-item;
+            }
+
+            template {
+                display: none;
+            }
+
+            [hidden] {
+                display: none;
+            }
+            @media print {
+          html, body {
+            margin: 0;
+            padding: 0;
+            background: #FFF; 
+            font-size: 9.5pt;
+          }
+          .container, .container div {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+          }
+          .template { overflow: hidden; }
+          img { width: 100%; }
+        }
+        </style>
+
+</head>
+
+<body cz-shortcut-listen="true">
+    <div id="eform-wrap">
+        <section class="">
+            <header>
+                <h1><span style="color:#EB008B">LGU+</span><span
+                        style="font-size:40px;padding-left:15px;font-weight:500;">U+ 페이퍼 사전 기입 양식</span> </h1>
+                <!--<span class="info-date">2020.07.27</span>-->
+            </header>
+            <article>
+                <div class="margin-top:20px; " style="display:block; height:28px; margin-left:560px; text-align:left;">
+                    <span>가입구분</span>
+                    <span><input type="checkbox" name=""> 신규</span>
+                    <span><input type="checkbox" name=""> 번호이동</span>
+                    <span><input type="checkbox" name=""> 기기변경</span>
+                    <span> (택1)</span>
+                </div>
+                <div class="margin-top:50px; height:30px;"
+                    style="display:block; height:28px;margin-left:560px; text-align:left;">고객구분
+                    <span><input type="checkbox" name=""> 성인</span>
+                    <span><input type="checkbox" name=""> 미성년자</span>
+                    <span> (택1)</span>
+                </div>
+            </article>
+
+            <!-- 고객정보 기입 -->
+            <article>
+                <div
+                    style="width:100%; padding:9px 0;/*color:#292929;*/font-size:18px;font-weight:600;text-align:center; background-color:#427AAE; color:#fff; ">
+                    ※ 고객정보 기입</div>
+                <table class=""
+                    style="border-left:5px solid #427AAE;border-right:5px solid #427AAE;border-bottom:5px solid #427AAE;">
+                    <caption></caption>
+                    <colgroup>
+                        <col style="width:16%;">
+                        <col style="width:30%;">
+                        <col style="width:17%;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>고객명 </td>
+                            <td><input type="text" name="" id="" style="width:200px;"></td>
+                            <td>생년월일 </td>
+                            <td><span><input type="text" name="" id="" style="width:70px;"> 년 </span><span><input
+                                        type="text" name="" id="" style="width:40px;"> 월</span> <span><input type="text"
+                                        name="" id="" style="width:40px;"> 일</span></td>
+                        </tr>
+                        <tr>
+                            <td>개통번호</td>
+                            <td><input type="text" name="" id="" style="width:60px;"> - <input type="text" name="" id=""
+                                    style="width:60px;"> - <input type="text" name="" id="" style="width:60px;"></td>
+                            <td>기타연락처</td>
+                            <td>
+                                <div><input type="text" name="" id="" style="width:60px;"> - <input type="text" name=""
+                                        id="" style="width:60px;"> - <input type="text" name="" id=""
+                                        style="width:60px;"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>주소</td>
+                            <td colspan="3"><input type="text" name="" id="" style="width:98%;"></td>
+                        </tr>
+                        <tr class="tbl-custom-info">
+                            <td style="border-right:1px dashed #bbb;">요금납부방법 <br><sub>(택1)</sub></td>
+                            <td colspan="3">
+                                <div>
+                                    <p>
+                                        <span><input type="checkbox" name="" class="chk-style1"> 은행납부</span>
+                                        <span><input type="text" name="" id="" style="width:100px;"> 은행</span>
+                                        <span>계좌번호</span>
+                                        <span><input type="text" name="" id="" style="width:190px;"></span>
+                                    </p>
+                                    <p>
+                                        <span><input type="checkbox" name=""> 카드납부</span>
+                                        <span><input type="text" name="" id="" style="width:100px;"> 카드</span>
+                                        <span>카드번호</span>
+                                        <span><input type="text" name="" id="" style="width:190px;"></span>
+                                        <span>유효기간</span>
+                                        <span><input type="text" name="" id="" style="width:54px;"> 년</span>
+                                        <span><input type="text" name="" id="" style="width:40px;"> 월</span>
+                                    </p>
+                                    <p>
+                                        <span><input type="checkbox" name=""> 지로</span>
+                                        <span>예금주명(카드주명) <input type="text" name="" id="" style="width:100px;"></span>
+                                        <span>(관계<span style="padding-left:100px;">)</span></span>
+                                        <span>법정 생년월일 <input type="text" name="" id="" style="width:100px;"></span>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tbl-custom-info">
+                            <td style="border-right:1px dashed #bbb;">번호이동 정보</td>
+                            <td colspan="3">
+                                <div>
+                                    <p>
+                                        <span>이전통신사<sub>(택1)</sub></span>
+                                        <span><input type="checkbox" name="">&nbsp;SKT</span><span><input
+                                                type="checkbox" name="">&nbsp;LGU</span>
+                                        <!--<span><input type="checkbox" name="" > SKT</span>
+										<span><input type="checkbox" name="" > KT</span>
+										<span><input type="checkbox" name="" > LGU+</span>-->
+                                        <span><input type="checkbox" name=""> MVNO</span>
+                                        <span>(<span style="padding-left:150px;"></span>)</span>
+                                    </p>
+                                    <p>
+                                    </p>
+                                    <div style="position:absolute;margin-left:620px; margin-top:-15px;"><sup>뒷4자리</sup>
+                                    </div>
+                                    <span>인증방법<sub>(택1)</sub></span>
+                                    <span class="ft15"><input type="checkbox" name=""> 단말기(USIM)일련번호</span>
+                                    <span class="ft15"><input type="checkbox" name=""> 신용카드번호</span>
+                                    <span class="ft15"><input type="checkbox" name=""> 요금납부계좌</span>
+                                    <span class="ft15"><input type="checkbox" name=""> 지로</span>
+                                    <span>
+
+                                        <input type="text" name="" style="width:30px;">
+                                        <input type="text" name="" style="width:30px;">
+                                        <input type="text" name="" style="width:30px;">
+                                        <input type="text" name="" style="width:30px;">
+                                    </span>
+
+                                    <p></p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tbl-custom-info tr-bgcolor">
+                            <td style="border-right:1px dashed #bbb;">
+                                <span>※ 미성년자의 경우</span><br>
+                                <span style="padding-left:21px;">법정대리인</span></td>
+                            <td colspan="3">
+                                <p>
+                                    <span>법정대리인 성명</span>
+                                    <span><input type="text" name="" id="" style="width:100px;"></span>
+                                    <span>(관계<span style="padding-left:100px;"></span>)</span>
+                                </p>
+                                <p>
+                                    <span>법정대리인 주민등록번호</span>
+                                    <span><input type="text" name="" id="" style="width:100px;"> - <input type="text"
+                                            name="" id="" style="width:100px;"></span>
+                                    <span>연락처</span>
+                                    <span style="height:150px;"><input type="text" name="" id="" style="width:60px;"> -
+                                        <input type="text" name="" id="" style="width:60px;"> - <input type="text"
+                                            name="" id="" style="width:60px;"></span>
+                                </p>
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </article>
+
+            <!-- 상담정보 -->
+            <article>
+                <div
+                    style="margin-top:10px; padding-top:9px;font-size:18px;font-weight:600;text-align:center; background-color:#CECDCD; color:#fff; ">
+                    상담정보</div>
+                <table
+                    style="border-left:5px solid #CECDCD;border-right:5px solid #CECDCD;border-bottom:5px solid #CECDCD;">
+                    <!--<caption style="text-align:center;margin-top:20px;">상담정보</caption>-->
+                    <colgroup>
+                        <col style="width:50%">
+                        <col style="width:50%">
+                    </colgroup>
+                    <thead>
+                        <tr class="tr-h20">
+                            <th>단말</th>
+                            <th>요금</th>
+                        </tr>
+                    </thead>
+                    <tbody class="consult-info">
+                        <!-- 단말정보 -->
+                        <tr class="tr-h35">
+                            <td class="td-brd-line td-bg td-font">
+                                <div style="width:100%; float:left;">
+                                    <div style="width:15%; float:left;">
+                                        모델명
+                                    </div>
+                                    <div style="width: 45%; float: left;overflow: hidden;white-space: nowrap; text-overflow: ellipsis;">
+                                        IPHONE_12_MINI_64GB </div>
+                                    <div style="width:auto; float:left;">
+                                        일련번호
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="td-bg td-font">
+                                <div style="width:100%; float:left;">
+                                    <div style="width:25%; float:left;">
+                                        요금제명
+                                    </div>
+                                    <div style="width:auto; float:left;">
+                                        슈퍼플랜 베이직 </div>
+                                    <div style="width:20%; padding-left:10px;float:left;">
+                                        (80,000원)
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tr-h35">
+                            <td class="td-brd-line td-bg td-font">
+                                <div style="width:100%; float:left;">
+                                    <div style="width:60%; float:left;">
+                                        USIM
+                                    </div>
+                                    <!--<div style="width:40%; float:left; overflow: hidden;">
+																	</div>-->
+                                    <div style="width:auto; float:right; font-size:13px; ">
+                                        <div style="position:absolute; "></div>
+                                        <span><input type="checkbox" name=""></span>
+                                        <span>즉납</span>
+                                        <span><input type="checkbox" name=""></span>
+                                        <span>대납</span>
+                                        <span><input type="checkbox" name=""></span>
+                                        <span>후납</span>
+                                        <span><input type="checkbox" name=""></span>
+                                        <span>재사용</span>
+                                    </div>
+                                </div>
+                                <!--<div>
+								<p>USIM
+									<span>123123123123</span>
+									<span><input type="checkbox" name="" ></span>
+									<span>즉납</span>
+									<span><input type="checkbox" name="" ></span>
+									<span>대납</span>
+									<span><input type="checkbox" name="" ></span>
+									<span>후납</span>
+									<span><input type="checkbox" name="" ></span>
+									<span>재사용</span>
+								</p>
+							</div>-->
+                            </td>
+                            <td class="td-bg td-font">
+                                <div style="width:100%; float:left;">
+                                    <div style="width:25%; float:left;">
+                                        요금약정할인
+                                    </div>
+                                    <div style=" float:left;">
+                                        0 원
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tr-h35">
+                            <td class="td-brd-line td-bg td-font">
+                                <div style="width:100%; float:left;">
+                                    <div style="width:15%; float:left;">
+                                        출고가
+                                    </div>
+                                    <div style="width:25%; float:left;">
+                                        946,000 원
+                                    </div>
+                                    <div style="width:18%; float:left;">
+                                        공시지원금
+                                    </div>
+                                    <div style="width:auto; float:left;">
+                                        370,000 원
+                                        <sub style=" float:right; margin-top:7px;">
+                                        </sub>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="td-bg td-font">
+                                <div style="width:100%; float:left;">
+                                    <div style="width:25%; float:left;">
+                                        선택약정할인
+                                    </div>
+                                    <div style="width:25%; float:left; padding-right:15px;">
+                                        0 원
+                                    </div>
+                                    <div style="width:auto; float:left;">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tr-h35">
+                            <td class="td-brd-line td-bg td-font">
+                                <div style="width:100%; float:left;">
+                                    <div style="width:20%; float:left;">
+                                        추가지원금
+                                    </div>
+                                    <div style="width:25%; float:left;">
+                                        0 원
+                                    </div>
+                                    <div style="width:25%; float:left;">
+                                        기타할인
+                                    </div>
+                                    <div style="width:auto; float:left;">
+                                        0 원
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="td-bg td-font">
+                                <div style="width:100%; float:left;">
+                                    <div style="width:25%; float:left;">
+                                        프로모션할인
+                                    </div>
+                                    <div style=" float:left;">
+                                        0 원
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tr-h35">
+                            <td class="td-brd-line td-bg td-font">
+                                <div style="width:100%; float:left;">
+                                    <div style="width:20%; float:left;">
+                                        할부원금
+                                    </div>
+                                    <div style="width:25%; float:left;">
+                                        576,000 원
+                                    </div>
+                                    <div style="width:auto; float:left;">
+                                        (24 개월)
+                                    </div>
+                                </div>
+                                <!--<div>
+								<p>할부원금
+									<span>500,000원</span>
+									<span>(24개월)</span>
+								</p>
+							</div>-->
+                            </td>
+                            <td class="td-bg td-font">
+                                <div style="width:100%; float:left;">
+                                    <div style="width:25%; float:left;">
+                                        결합할인
+                                    </div>
+                                    <div style="width:50%; float:left;">
+                                        미적용 </div>
+                                    <div style="width:auto; float:left;">
+                                        (0 원)
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tr-h35">
+                            <td class="td-brd-line td-bg td-font">
+                                <div style="width:100%; float:left;">
+                                    <div style="width:20%; float:left;">
+                                        현금구입가
+                                    </div>
+                                    <div style="width:auto; float:left;">
+                                        0 원
+                                    </div>
+                                </div>
+
+                            </td>
+                            <td class="td-bg td-font">
+                                <div style="width:100%; float:left;">
+                                    <div style="width:25%; float:left;">
+                                        복지할인
+                                    </div>
+                                    <div style="width:50%; float:left;">
+                                        미적용
+                                        <!--<span >(35% 할인)</span>-->
+                                    </div>
+
+                                    <div style="width:auto; float:left;">
+                                        (0 원)
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tr-h35">
+                            <td class="td-brd-line td-bg td-font">
+                                <div style="width:100%; float:left;">
+                                    <div style="width:20%; float:left;">
+                                        선할인카드
+                                    </div>
+                                    <div style="width:50%; float:left;">
+                                        미적용 </div>
+                                    <div style="width:auto; float:left;">
+                                        (0 원)
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="td-bg td-font">
+                                <div style="width:100%; float:left;">
+                                    <div style="width:25%; float:left;">
+                                        청구할인카드
+                                    </div>
+                                    <div style="width:50%; float:left; overflow:hidden;">
+                                        미적용 </div>
+                                    <div style="width:auto; ">
+                                        (0 원)
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <div
+                    style="margin-top:10px; padding:9px 0;/*color:#292929;*/font-size:18px;font-weight:600;/*background:#f6f6f6; border-bottom: 1px solid #a0a0a0; */text-align:center; background-color:#D6D3D3; color:#fff; ">
+                    부가정보</div>
+                <div
+                    style="border-left:5px solid #D6D3D3;border-right:5px solid #D6D3D3;border-bottom:5px solid #D6D3D3;">
+                    <div class="td-bg" style="width:100%;font-size:16px; height:30px;padding:5px 0 0 5px;">
+                        <div style="width:30%;float:left;">
+                            <span class="brd-line">보험 : </span>
+                            <span class="mg10">보험 </span>
+                        </div>
+                        <div style="width:40%;float:left;">
+                            <span class="brd-line">중고폰 보상프로그램 : </span>
+                            <span class="mg10">중고폰 보상프로그램 </span>
+                        </div>
+                        <div style="width:30%;float:left;">
+                            <span class="brd-line">멤버십할인 : </span>
+                            <span class="mg10-last">멤버십할인 </span>
+                        </div>
+
+                    </div>
+                    <div class="td-bg"
+                        style="font-size:16px; height:30px;border-top:1px dashed #bbb; white-space:nowrap;padding:5px 0 0 5px;">
+                        <span class="brd-line">부가서비스 : </span>
+                        <span>부가서비스</span>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-1" style="width: calc(75% - 5px); float: left; margin-right: 5px;">
+                    <div
+                        style="margin-top:10px; padding:9px 0;/*color:#292929;*/font-size:18px;font-weight:600;/*background:#f6f6f6; border-bottom: 1px solid #a0a0a0; */text-align:center; background-color:#D6D3D3; color:#fff; ">
+                        메모</div>
+                    <div
+                        style="border-left:5px solid #D6D3D3;border-right:5px solid #D6D3D3;border-bottom:5px solid #D6D3D3;">
+                        <div class="td-bg"
+                            style="font-size:70px; font-weight:500; color:#D6D3D3; padding-bottom:7px;text-align:center;">
+                            R/B</div>
+                    </div>
+                </div>
+                <div class="item-1" style="width: 25%; float: left;">
+                    <div
+                        style="margin-top:10px; padding:9px 0;/*color:#292929;*/font-size:18px;font-weight:600;/*background:#f6f6f6; border-bottom: 1px solid #a0a0a0; */text-align:center; background-color:#D6D3D3; color:#fff; ">
+                        고객서명</div>
+                    <div
+                        style="border-left:5px solid #D6D3D3;border-right:5px solid #D6D3D3;border-bottom:5px solid #D6D3D3; ">
+                        <div class="td-bg"
+                            style="font-size:70px; font-weight:500; color:#D6D3D3; padding-bottom:7px;text-align:center; height: 87px;">
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <footer>
+                <div>※ 모비셀에서 제공한 전자청약 상담 양식이며, 모비셀에서는 개인정보를 일체 저장하지 않습니다.</div>
+                <div style="text-align:right;padding-top:5px;padding-right:3px;">개통일자 : <span
+                        style="display:inline-block; width:50px;">2020</span> 년<span
+                        style="display:inline-block; width:50px;">11</span> 월<span
+                        style="display:inline-block; width:50px;">27</span> 일</div>
+                <!-- 매장명/판매자/전화번호 -->
+                <div>
+                    <div style="width: 100%; margin-left: 4px;">
+                        <div class="ft-info" style="width: 292px">
+                            <div class="brd-line">매장명</div>
+                            <span class="brd-pd">모비셀테스터(t)</span>
+                        </div>
+                        <div class="ft-info" style="width: 292px">
+                            <div class="brd-line">판매자</div>
+                            <span class="brd-pd">Thomas</span>
+                        </div>
+                        <div class="ft-info" style="width: 292px; margin-right: 0;">
+                            <div class="brd-line">전화번호</div>
+                            <span class="brd-pd">010-0000-0000</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+    <!-- <script src="../../js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="../../js/vendor/jquery/jquery-3.4.1.min.js"></script> -->
+
+</body>
+
+</html>

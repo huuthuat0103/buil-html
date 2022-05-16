@@ -1,0 +1,30 @@
+<html lang="vi">
+
+<head>
+  <!-- include head.html -->
+  @@include('../parts/head.html', {
+  "title": "TSC-HTML"
+  })
+  <!-- include styles.html -->
+  @@include('../parts/styles.html')
+</head>
+
+<body class="wrapper" id="body">
+  @@include('../parts/header.html', {
+    "title": ""
+    })
+
+  <div class="main-wrapper">
+    <section class="banner">
+      <h1>Banner</h1>
+    </section>
+  </div>
+
+
+  @@include('../parts/footer.html')
+
+  <!-- include scripts.html -->
+  @@include('../parts/scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,893 @@
+<html lang="vi">
+
+<head>
+    <!-- include head.html -->
+    
+    <!-- include styles.html -->
+    
+
+    <style>
+.print-modal {
+  max-width: 600px;
+  margin: 0 auto; }
+  .print-modal .title {
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #c9d9ff; }
+  .print-modal .card-detail {
+    display: block;
+    float: left;
+    width: 100%;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #c9d9ff; }
+    .print-modal .card-detail .left {
+      width: 30%;
+      float: left; }
+      .print-modal .card-detail .left img {
+        width: 100%;
+        max-height: 138px;
+        object-fit: cover;
+        height: auto; }
+    .print-modal .card-detail .right {
+      width: 67%;
+      float: left;
+      padding-left: 15px;
+      position: relative; }
+      .print-modal .card-detail .right .content-right {
+        width: calc(100% - 70px);
+        float: left; }
+        .print-modal .card-detail .right .content-right .item-label {
+          display: flex;
+          align-items: center;
+          margin-bottom: 5px; }
+          .print-modal .card-detail .right .content-right .item-label .label-name {
+            padding-right: 10px;
+            text-align: right;
+            font-weight: 600;
+            font-size: 12px;
+            color: #363c58;
+            width: 30%; }
+          .print-modal .card-detail .right .content-right .item-label .text {
+            padding-left: 10px;
+            font-weight: normal;
+            font-size: 12px;
+            color: #363c58;
+            width: 70%; }
+            .print-modal .card-detail .right .content-right .item-label .text a {
+              color: #2f8bff;
+              font-weight: bold; }
+      .print-modal .card-detail .right .qr-images {
+        width: 70px;
+        height: 70px;
+        float: left;
+        position: absolute;
+        right: 0;
+        bottom: 5px; }
+        .print-modal .card-detail .right .qr-images img {
+          width: 100%;
+          height: 100%; }
+  .print-modal .content-print {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 30px; }
+    .print-modal .content-print h4 {
+      font-weight: bold;
+      font-size: 14px;
+      color: #363c58; }
+    .print-modal .content-print .left {
+      width: 48%;
+      float: left;
+      padding-right: 2%;
+      margin-bottom: 15px; }
+      .print-modal .content-print .left article {
+        border: 1px solid #c0c2c7;
+        box-sizing: border-box;
+        border-radius: 3px;overflow: hidden;
+        height: 383px;
+        width: 98%;
+        padding: 15px 10px; }
+        .print-modal .content-print .left article .text-red {
+          font-weight: normal;
+          font-size: 11px;
+          color: #ff877c; }
+        .print-modal .content-print .left article h6 {
+          font-weight: bold;
+          font-size: 11px;
+          color: #363c58; }
+        .print-modal .content-print .left article p {
+          font-weight: normal;
+          font-size: 11px;
+          color: #363c58;
+          margin-bottom: 5px; }
+    .print-modal .content-print .right {
+      width: 48%;
+      float: left;
+      padding-left: 2%;
+      margin-bottom: 15px; }
+      .print-modal .content-print .right .performance {
+        overflow: hidden;
+        width: 98%; }
+        .print-modal .content-print .right .performance article {
+          border: 1px solid #c0c2c7;
+          box-sizing: border-box;
+          border-radius: 3px;
+          height: 124px;
+          width: 100%;
+          overflow: hidden;
+          padding: 15px 10px;
+          width: 100%; }
+          .print-modal .content-print .right .performance article .text-red {
+            font-weight: normal;
+            font-size: 11px;
+            color: #ff877c; }
+          .print-modal .content-print .right .performance article h6 {
+            font-weight: bold;
+            font-size: 11px;
+            color: #363c58; }
+          .print-modal .content-print .right .performance article p {
+            font-weight: normal;
+            font-size: 11px;
+            color: #363c58;
+            margin-bottom: 5px; }
+      .print-modal .content-print .right .no-performance {
+        margin-top: 15px;
+        overflow: hidden;
+        width: 98%; }
+        .print-modal .content-print .right .no-performance article {
+          border: 1px solid #c0c2c7;
+          box-sizing: border-box;
+          border-radius: 3px;
+          height: 188px;
+          padding: 15px 10px;
+          width: 100%; }
+          .print-modal .content-print .right .no-performance article .text-red {
+            font-weight: normal;
+            font-size: 11px;
+            color: #ff877c; }
+          .print-modal .content-print .right .no-performance article h6 {
+            font-weight: bold;
+            font-size: 11px;
+            color: #363c58; }
+          .print-modal .content-print .right .no-performance article p {
+            font-weight: normal;
+            font-size: 11px;
+            color: #363c58;
+            margin-bottom: 5px; }
+  .print-modal .h-44 {
+    height: 44px !important; 
+    padding: 0 10px !important;
+}
+  .print-modal .item-footer {
+      margin-top: 15px;
+      float: left;
+      width: 100%;
+    padding-left: 20%; }
+    .print-modal .item-footer h4 {
+      width: 15%;
+      float: left;
+      font-weight: bold;
+      font-size: 14px;
+      float: left;
+      color: #363c58;
+      line-height: 18px; }
+    .print-modal .item-footer article {
+      width: 290px;
+      border: 1px solid #c0c2c7;
+      box-sizing: border-box;
+      border-radius: 3px;
+      height: 44px;
+      padding: 0 10px;
+      float: left; }
+      .print-modal .item-footer article p {
+        font-weight: 600;
+        font-size: 16px;
+        color: #363C58;
+        line-height: 1; }
+    </style>
+</head>
+
+<body class="wrapper">
+
+    <section class="print-modal">
+        <h2 class="title">
+            KT Super 할부 하나카드
+        </h2>
+        <div class="card-detail">
+            <div class="left">
+                <img src="/images/card-05.png" alt="">
+            </div>
+            <div class="right">
+                <div class="content-right">
+                    <div class="item-label">
+                        <span class="label-name">
+                            카드구분
+                        </span>
+                        <span class="text">
+                            라이트할부카드
+                        </span>
+                    </div>
+                    <div class="item-label">
+                        <span class="label-name">
+                            카드구분
+                        </span>
+                        <span class="text">
+                            자동이체 필수
+                        </span>
+                    </div>
+                    <div class="item-label">
+                        <span class="label-name">
+                            결제구분
+                        </span>
+                        <span class="text">
+                            국내 12,000 원 / 국외 15,000 원
+                        </span>
+                    </div>
+                    <div class="item-label">
+                        <span class="label-name">
+                            연회비
+                        </span>
+                        <span class="text">
+                            라이트할부카드
+                        </span>
+                    </div>
+                    <div class="item-label">
+                        <span class="label-name">
+                            발급센터
+                        </span>
+                        <span class="text">
+                            <span>ARS</span>
+                            <a href="">1899-5500</a>
+                        </span>
+                    </div>
+                    <div class="item-label">
+                        <span class="label-name"></span>
+                        <span class="text">
+                            <span>온라인</span>
+                            <a href="">www.hanacard.co.kr <img src="/images/Icon-11.svg" alt=""></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="qr-images">
+                    <img src="/images/qrcode.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content-print">
+            <div class="left">
+                <h4 >
+                    카드혜택
+                </h4>
+                <article>
+                   <h5 class="text-red">*할인은 카드 청구금액 에서 적용 됩니다.</h5>
+                   <h6>제휴혜택</h6>
+                   <p>KT 24 / 36 개월 장기할부</p>
+                   <p>> 대상기종 : 전기종</p>
+                   <p>> 할부 수수료율 : 24개월 연 5.9% / 36개월 연 7%</p>
+                   <p>> 대상기종 : 전기종</p>
+                </article>
+            </div>
+            <div class="right">
+                <div class="item-right performance">
+                    <h4 >
+                        전월실적 포함
+                    </h4>
+                    <article>
+                        <p>카드사에 문의해 주세요.</p>
+                     </article>
+                </div>
+                <div class="item-right no-performance">
+                    <h4 >
+                        전월실적 미포함
+                    </h4>
+                    <article>
+                        <p>무이자 할부이용금액, 단기 카드 대출(현금서비스), 장기카드 대출(카드론), 연회비, 각종수수료, 이자,
+                             거래 취소금액, 선불카드 충전실적, 전기요금, 도시가스, 4대보험료 등</p>
+                     </article>
+                </div>
+            </div>
+            <div class="left">
+                <h4 >
+                    월 사용액	
+                </h4>
+                <article class="h-44">
+                   <p>30만원 이상, 월 10,000 원 할인</p>
+                </article>
+            </div>
+
+            <div class="right">
+               <div class="item-right performance">
+                    <h4 >
+                        할부기간	
+                    </h4>
+                    <article class="h-44">
+                    <p>24개월</p>
+                    </article>
+               </div>
+            </div>
+        </div>
+        <div class="item-footer">
+            <h4 >
+                카드혜택
+            </h4>
+            <article>
+                <p>240,000 원</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- include scripts.html -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- build:js script/script.min.js -->
+<script type="text/javascript" src="/js/script.js"></script>
+<script type="text/javascript" src="/js/calendar.js"></script>
+<!-- endbuild -->
+<script src="http://ellacy.edu.vn/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=4.4.6"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet prefetch"
+  href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+<script type="">
+
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+
+
+isIphone = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+isAndroid = /Android/i.test(navigator.userAgent);
+
+var Width = window.screen.width;
+var Height = window.screen.height;
+
+function doOnOrientationChange() {
+  switch (window.orientation) {
+    case -90:
+    case 90:
+      if (isMobile) {
+        $('html').removeClass('devices-mobile');
+        $('body').removeClass('body-mobile');
+        $('body').css('width', '100%');
+      }
+
+      break;
+    default:
+      if (isMobile && Height < 1000) {
+        $('html').addClass('devices-mobile');
+        $('body').addClass('body-mobile');
+      }
+
+      if (isIphone) {
+        if (Height > 660 && Height < 740) {
+          $('.devices-mobile .body-mobile').css('width', '60%');
+          $('.devices-mobile .modal').css('width', '60%');
+        } else {
+          if (Height > 810 && Height < 850) {
+            $('.devices-mobile .body-mobile').css('width', '56.5%');
+            $('.devices-mobile .modal').css('width', '56.5%');
+          }
+
+          if (Height > 850) {
+            $('.devices-mobile .body-mobile').css('width', '57.5%');
+            $('.devices-mobile .modal').css('width', '57.5%');
+          }
+        }
+      } else {
+        if (isMobile) {
+          $('body').css('width', '62%');
+        }
+      }
+      break;
+  }
+}
+
+
+window.addEventListener('orientationchange', doOnOrientationChange);
+
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+
+
+isIphone=  /iPhone|iPad|iPod/i.test(navigator.userAgent);
+isAndroid=  /Android/i.test(navigator.userAgent);
+
+var Width = window.screen.width;
+var Height = window.screen.height;
+
+function doOnOrientationChange() {
+    switch(window.orientation) {
+      case -90: case 90:
+      if (isMobile) {
+  $('html').removeClass('devices-mobile');
+  $('body').removeClass('body-mobile');
+  $('body').css('width', '100%');
+}
+
+        break;
+      default:
+      if (isMobile $$ Height < 1000) {
+  $('html').addClass('devices-mobile');
+  $('body').addClass('body-mobile');
+  $('body').css('width', '62%');
+}
+
+if (isIphone) {
+  if (Height>660 && Height<740) {
+    $('.devices-mobile .body-mobile').css('width','60%');
+    $('.devices-mobile .modal').css('width','60%');
+  }
+
+  else {
+    if (Height>810 && Height<850) {
+    $('.devices-mobile .body-mobile').css('width','56.5%');
+    $('.devices-mobile .modal').css('width','56.5%');
+    }
+
+    else {
+      if (Height>850 ) {
+    $('.devices-mobile .body-mobile').css('width','57.5%');
+    $('.devices-mobile .modal').css('width','57.5%');
+  }
+  }
+}
+}
+
+else {
+  if (isAndroid) {
+    $('body').css('width', '62%');
+}
+}
+        break;
+    }
+}
+
+
+window.addEventListener('orientationchange', doOnOrientationChange);
+
+// Initial execution if needed
+doOnOrientationChange();
+
+if (isIphone) {
+  if (Height>660 && Height<740) {
+    $('.devices-mobile .body-mobile').css('width','60%');
+    $('.devices-mobile .modal').css('width','60%');
+  }
+
+  else {
+    if (Height>810 && Height<850) {
+    $('.devices-mobile .body-mobile').css('width','56.5%');
+    $('.devices-mobile .modal').css('width','56.5%');
+  }
+
+  if (Height>850 ) {
+    $('.devices-mobile .body-mobile').css('width','57.5%');
+    $('.devices-mobile .modal').css('width','57.5%');
+  }
+}
+}
+
+
+if (isIphone) {
+  if (Height>850) {
+    $('.devices-mobile .body-mobile').css('width','66%');
+    $('.devices-mobile .modal').css('width','66%');
+  }
+
+  else {
+    if (Height>800) {
+      $('.devices-mobile .body-mobile').css('width','calc(100% - 900px)');
+      $('.devices-mobile .modal').css('width','57%');
+    }
+
+  else {
+    if (Height>700) {
+      $('.devices-mobile .body-mobile').css('width','68.2%');
+      $('.devices-mobile .modal').css('width','68.2%');
+    }
+
+    else {
+      $('.devices-mobile .body-mobile').css('width','68%');
+      $('devices-mobile .modal').css('width','68%');
+    }
+
+  }
+  }
+
+} else {
+  if (Width<=375 &&  Height<=700) {
+    $('.devices-mobile .body-mobile').css('width','70%' );
+    $('.devices-mobile .modal').css('width','70%' )
+  }
+}
+
+$(window).on('scroll', function () {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop >= 275) {
+        $('.right-information').addClass('right-fixed');
+        $('.right-information').css({'width': widthRight ,'left': left});
+
+    } else {
+        $('.right-information').removeClass('right-fixed');
+    }
+});
+
+var supportsOrientationChange = "onorientationchange" in window,
+    orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+
+window.addEventListener(orientationEvent, function() {
+
+  $('.wrapper').css("background", "#000");
+
+  if(window.innerHeight > window.innerWidth){
+    alert("Please use Landscape!");
+  }else{
+    alert("Please use portrait!");
+  }
+}, false);
+$(document).ready(function() {
+  alert("1111");
+    $(window).on('orientationchange', function(event) {
+      if(screen.availHeight > screen.availWidth){
+          alert("Please use Landscape!");
+      }
+    });
+});
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+// alert(isMobile)
+if (isMobile) {
+  $('html, body').css('width','812px' ).css('height', '375px')
+  // .css('transform', 'rotate(-90deg)').css('transform-origin','top left')
+
+
+
+var widthRight = document.getElementById("right-information").offsetWidth;
+
+var widthBodys = $(".wrapper").width();
+var widthDevice =window.screen.width;
+
+if(widthBodys < widthDevice) {
+  $('.wrapper').addClass('bodyCustom');
+}
+else {
+    $('.wrapper').removeClass('bodyCustom');
+
+  }
+$("img").on("error", function () {
+  $(this).attr("src", "/images/default_large.png");
+    $(this).css('opacity', 0);
+});
+
+$("img").on("error", function () {
+    $(this).attr("src", "/images/default_large.png");
+});
+
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+
+
+isIphone=  /iPhone|iPad|iPod/i.test(navigator.userAgent);
+isAndroid=  /Android/i.test(navigator.userAgent);
+
+var Width = window.screen.width;
+var Height = window.screen.height;
+
+function doOnOrientationChange() {
+    switch(window.orientation) {
+      case -90: case 90:
+      if (isMobile) {
+  $('html').removeClass('devices-mobile');
+  $('body').removeClass('body-mobile');
+  $('body').css('width', '100%');
+}
+
+        break;
+      default:
+      if (isMobile $$ Height < 1000) {
+  $('html').addClass('devices-mobile');
+  $('body').addClass('body-mobile');
+  $('body').css('width', '62%');
+}
+
+if (isIphone) {
+  if (Height>660 && Height<740) {
+    $('.devices-mobile .body-mobile').css('width','60%');
+    $('.devices-mobile .modal').css('width','60%');
+  }
+
+  else {
+    if (Height>810 && Height<850) {
+    $('.devices-mobile .body-mobile').css('width','56.5%');
+    $('.devices-mobile .modal').css('width','56.5%');
+    }
+
+    else {
+      if (Height>850 ) {
+    $('.devices-mobile .body-mobile').css('width','57.5%');
+    $('.devices-mobile .modal').css('width','57.5%');
+  }
+  }
+}
+}
+
+else {
+  if (isAndroid) {
+    $('body').css('width', '62%');
+}
+}
+        break;
+    }
+}
+
+
+window.addEventListener('orientationchange', doOnOrientationChange);
+
+// Initial execution if needed
+doOnOrientationChange();
+
+if (isIphone) {
+  if (Height>660 && Height<740) {
+    $('.devices-mobile .body-mobile').css('width','60%');
+    $('.devices-mobile .modal').css('width','60%');
+  }
+
+  else {
+    if (Height>810 && Height<850) {
+    $('.devices-mobile .body-mobile').css('width','56.5%');
+    $('.devices-mobile .modal').css('width','56.5%');
+  }
+
+  if (Height>850 ) {
+    $('.devices-mobile .body-mobile').css('width','57.5%');
+    $('.devices-mobile .modal').css('width','57.5%');
+  }
+}
+}
+
+
+if (isIphone) {
+  if (Height>850) {
+    $('.devices-mobile .body-mobile').css('width','66%');
+    $('.devices-mobile .modal').css('width','66%');
+  }
+
+  else {
+    if (Height>800) {
+      $('.devices-mobile .body-mobile').css('width','calc(100% - 900px)');
+      $('.devices-mobile .modal').css('width','57%');
+    }
+
+  else {
+    if (Height>700) {
+      $('.devices-mobile .body-mobile').css('width','68.2%');
+      $('.devices-mobile .modal').css('width','68.2%');
+    }
+
+    else {
+      $('.devices-mobile .body-mobile').css('width','68%');
+      $('devices-mobile .modal').css('width','68%');
+    }
+
+  }
+  }
+
+} else {
+  if (Width<=375 &&  Height<=700) {
+    $('.devices-mobile .body-mobile').css('width','70%' );
+    $('.devices-mobile .modal').css('width','70%' )
+  }
+}
+
+
+
+
+
+$(".btn-menu").click(function(){
+  $(".menu-wrapper").addClass("active-menu");
+  $(".wrapper").css("overflow", "hidden");
+  });
+  $("#btn-menu").on('click', function() {
+    $("body").css('overflow', 'hidden')
+    $(".wrapper").css("overflow", "hidden");
+  //   $('body').html('<div class="ovelay_menu"></div>');
+  });
+  $("#close-menu").on('click', function() {
+    $("body").css('overflow', 'auto')
+    $(".wrapper").css("overflow", "inherit");
+  });
+  $(".close-menu").click(function(){
+      $(".menu-wrapper").removeClass("active-menu");
+  });
+
+$('.carousel').carousel({
+  touch: true
+})
+
+
+var galleryDetail = new Swiper('.thumbs-detail', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var galleryTop = new Swiper('.top-detail', {
+  spaceBetween: 0,
+  loop: true,
+  thumbs: {
+    swiper: galleryDetail,
+  },
+  navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+});
+
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 0,
+  loop: true,
+  thumbs: {
+    swiper: galleryThumbs,
+  },
+  navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+});
+var ThumbsTwo = new Swiper('.thumbs-two', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var productTwo = new Swiper('.product-two', {
+  spaceBetween: 0,
+  loop: true,
+  thumbs: {
+    swiper: ThumbsTwo
+  }
+});
+
+$(function () {
+  $(".form-datepicker").datepicker({
+  autoclose: true,
+  todayHighlight: true,
+  }).datepicker('update', new Date());
+});
+
+$('.timepicker').timepicker({
+    timeFormat: 'h:mm p',
+    interval: 60,
+    minTime: '10',
+    maxTime: '6:00pm',
+    defaultTime: '11',
+    startTime: '10:00',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+});
+
+
+
+
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
+
+  $( function() {
+
+  } );
+
+  $(document).ready(function(){
+
+
+  $(".btn-input-form").on('click', function() {
+    $(".wrapper.modal-open").css('padding', '0 15px')
+  });
+
+  $(".item-sub a").click(function(){
+      $(".menu-wrapper").removeClass("active-menu");
+  });
+
+  $(".btn-setting").click(function(){
+  $(".list_event_item .item").toggleClass("active-setting");
+  });
+
+  $(".list-setting li").click(function(){
+      $(".list_event_item .item").removeClass("active-setting");
+  });
+
+  $(".btn-paint").click(function(){
+    $(".btn-paint").css('display', 'none')
+    $(".content-paint").css('display', 'block');
+
+  });
+  $(".close-paint").click(function(){
+    $(".btn-paint").css('display', 'block')
+    $(".content-paint").css('display', 'none');
+  });
+  $("a").click(function(){
+    $(".btn-paint").css('display', 'block')
+    $(".content-paint").css('display', 'none');
+  });
+  $('body .menu-wrapper').on('click', function(e){
+    if(e.target.className == 'menu-wrapper active-menu')  $(".menu-wrapper").removeClass("active-menu");
+  })
+});
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
+var widthRight = document.getElementById("right-information").offsetWidth;
+var widthBody = document.getElementById("wireless-advice").offsetWidth;
+var left = ((widthBody - 3*widthRight) /2) + 30 + 2*widthRight;
+
+
+$(document).ready(function() {
+  $('#summernote').summernote();
+
+});
+
+
+$(window).resize(function(){
+  widthRight = document.getElementById("right-information").offsetWidth;
+  widthBody = document.getElementById("wireless-advice").offsetWidth;
+  left = ((widthBody - 3*widthRight) /2) + 30 + 2*widthRight;
+  var scrollTop = $(window).scrollTop();
+    if (scrollTop >= 275) {
+        $('.right-information').addClass('right-fixed');
+        $('.right-information').css({'width': widthRight ,'left': left});
+
+    } else {
+        $('.right-information').removeClass('right-fixed');
+    }
+});
+
+
+    $('body .menu-wrapper').on('click', function(e){
+    if(e.target.className == 'menu-wrapper active-menu')  $(".menu-wrapper").removeClass("active-menu");
+})
+
+$('*[data-link^="/"]').click(function(){
+window.location.href = $(this).data('link')
+
+})
+
+$("img").on("error", function () {
+  $(this).attr("src", "/images/default_large.png");
+    $(this).css('opacity', 0);
+});
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
